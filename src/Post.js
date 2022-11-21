@@ -49,7 +49,7 @@ export default function Post(props) {
     }
 
     return (
-        <div className="post">
+        <div data-test="post" className="post">
             <div className="topo">
                 <div className="usuario">
                     <img alt='' src={props.usuarioSrc} />
@@ -61,25 +61,25 @@ export default function Post(props) {
             </div>
 
             <div className="conteudo">
-                <img onClick={curtirFotoPelaImagem} alt='' src={props.conteudoSrc} />
+                <img onClick={curtirFotoPelaImagem} data-test="post-image" alt='' src={props.conteudoSrc} />
             </div>
 
             <div className="fundo">
                 <div className="acoes">
                     <div>
-                        <ion-icon onClick={curtirFoto} name={iconeCurtir} class={styleCurtir} ></ion-icon>
+                        <ion-icon data-test="like-post" onClick={curtirFoto} name={iconeCurtir} class={styleCurtir} ></ion-icon>
                         <ion-icon name="chatbubble-outline"></ion-icon>
                         <ion-icon name="paper-plane-outline"></ion-icon>
                     </div>
                     <div>
-                        <ion-icon onClick={salvarFoto} name={iconeSalvar}></ion-icon>
+                        <ion-icon data-test="save-post" onClick={salvarFoto} name={iconeSalvar}></ion-icon>
                     </div>
                 </div>
 
                 <div className="curtidas">
                     <img alt='' src={props.curtidasSrc} />
                     <div className="texto">
-                        Curtido por <strong>respondeai</strong> e <strong>outras {numCurtidas}</strong>
+                        Curtido por <strong>respondeai</strong> e <strong>outras <spam data-test="likes-number">{numCurtidas}</spam></strong>
                     </div>
                 </div>
             </div>

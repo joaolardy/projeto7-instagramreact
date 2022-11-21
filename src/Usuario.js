@@ -16,13 +16,13 @@ export default function Usuario(){
     }
 
     return(
-        <div className="usuario">
-            <img onClick={alterarImagem} alt='' src={imagem} />
+        <div data-test="user" className="usuario">
+            <img data-test="profile-image" onClick={alterarImagem} alt='' src={imagem} />
             <div className="texto">
                 <strong>{usuario}</strong>
-                <span>
-                    {nome} 
-                    <ion-icon onClick={alterarNome} name="pencil"></ion-icon>
+                <span className="row">
+                    <div data-test="name" className="flex">{nome}</div> 
+                    <ion-icon data-test="edit-name" onClick={alterarNome} name="pencil"></ion-icon>
                 </span>
             </div>
         </div>

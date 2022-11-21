@@ -2,17 +2,17 @@ import React from "react";
 
 export default function Usuario(){
     const [nome, setNome] = React.useState('Joao Lardy');
-    const [imagem, setImagem] = React.useState('assets/img/catanacomics.svg')
+    const [imagem, setImagem] = React.useState('assets/img/joaolardy.png')
     const usuario = 'joaolardy';
 
     function alterarNome(){
         let novoNome = prompt('Digite seu novo nome de usuário');
-        setNome(novoNome);
+        !novoNome ? alert('Digite um nome válido!') : setNome(novoNome);
     }
 
     function alterarImagem(){
         let novaImagem = prompt('Insira a url da sua nova foto de perfil');
-        setImagem(novaImagem);
+        !novaImagem ? alert('Digite uma url válida!') : setImagem(novaImagem);
     }
 
     return(

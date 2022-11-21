@@ -410,4 +410,6 @@ ion-icon {
   display: flex;
   flex-direction: row;
 }
-
+.redonda{
+  border-radius: 50%;
+}

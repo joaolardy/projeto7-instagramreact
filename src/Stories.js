@@ -2,13 +2,13 @@ import Story from "./Story";
 
 export default function Stories() {
     const stories = [
-        {src: "assets/img/meowed.svg", usuario: 'meowed'},
-        {src: "assets/img/barked.svg", usuario: 'barked'},
-        {src: "assets/img/nathanwpylestrangeplanet.svg", usuario: 'nathanwpylestrangeplanet'},
-        {src: "assets/img/wawawicomics.svg", usuario: 'wawawicomics'},
+        {src: "assets/img/bqdc.png", usuario: 'bqdc'},
+        {src: "assets/img/gg.png", usuario: 'greengo'},
+        {src: "assets/img/ufmg.png", usuario: 'ufmg'},
+        {src: "assets/img/pbh.png", usuario: 'belohorizonte'},
         {src: "assets/img/respondeai.svg", usuario: 'respondeai'},
-        {src: "assets/img/filomoderna.svg", usuario: 'filomoderna'},
-        {src: "assets/img/memeriagourmet.svg", usuario: 'memeriagourmet'},
+        {src: "assets/img/startupdareal.png", usuario: 'startupdareal'},
+        {src: "assets/img/driven.png", usuario: 'driven'},
         {src: "assets/img/meowed.svg", usuario: 'meowed'},
     ];
     return (

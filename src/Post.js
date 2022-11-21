@@ -52,7 +52,7 @@ export default function Post(props) {
         <div data-test="post" className="post">
             <div className="topo">
                 <div className="usuario">
-                    <img alt='' src={props.usuarioSrc} />
+                    <img alt='' className="redonda" src={props.usuarioSrc} />
                     {props.nomeUsuario}
                 </div>
                 <div className="acoes">
